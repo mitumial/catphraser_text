@@ -1,9 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=B612+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+/*
+    Josh's Custom CSS Reset
+    https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+/*
+    CSS Variables
+*/
+
 :root {
-    --clr-background: "#fbe8f8";
-    --clr-text: "#0e030c";
-    --clr-primary: "#e98bde";
-    --clr-secondary: "#8b301b";
-    --clr-accent: "#dea552";
+    /* Colors */
+    --clr-background: #0e030c;
+    --clr-text: #fbe8f8;
+    --clr-primary: #e98bde;
+    --clr-secondary: #8b301b;
+    --clr-accent: #dea552;
+
+    /* Fonts */
+    --ff-title: "Chakra Petch", sans-serif;
+    --ff-base: "B612 Mono", monospace;
 }
 /* colors in HSL
 colors: {
@@ -13,3 +30,50 @@ colors: {
  'secondary': 'hsl(11, 67%, 33%)',
  'accent': 'hsl(36, 68%, 60%)',
 },*/
+
+/* General styling*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--clr-background);
+    color: var(--clr-text);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* Specific Styling */
