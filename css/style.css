@@ -38,6 +38,8 @@ body {
     -webkit-font-smoothing: antialiased;
     color: var(--clr-text);
     background-color: var(--clr-background);
+    background-image: url("../assets/abstract-timekeeper.png");
+    background-size: cover;
 }
 
 img,
