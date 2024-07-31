@@ -7,26 +7,34 @@
         <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
-        <header>
+        <header class="header">
             <!--Include personal icon-->
         </header>
-        <main>
-            <section>
-                <textarea name="" id=""></textarea>
-                <span>
+        <main class="main-content">
+            <section class="input-group">
+                <textarea
+                    class="input-group__text-area"
+                    name=""
+                    id=""
+                ></textarea>
+                <span class="input-group__span">
                     No se permite el uso de mayúsculas y/o caracteres especiales
                 </span>
-                <button>Cifrar</button> <button>Descifrar</button>
+                <div class="input-group__btn-group">
+                    <button class="input-group__btn">Cifrar</button>
+                    <button class="input-group__btn">Descifrar</button>
+                </div>
             </section>
-            <section>
+            <section class="output-group">
                 <p></p>
                 <!--Replace for copy icon-->
-                <button>Copiar</button>
+                <button class="output-group_btn">Copiar</button>
             </section>
         </main>
-        <footer>
-            <p>Alejandra Cano 2024</p>
+        <footer class="footer">
+            <p class="footer_copyright">Alejandra Cano 2024</p>
             <a
+                class="footer_attribution"
                 href="https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/"
                 >Free SVG Backgrounds and Patterns by SVGBackgrounds.com</a
             >
