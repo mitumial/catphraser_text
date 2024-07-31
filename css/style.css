@@ -1,0 +1,15 @@
+:root {
+    --clr-background: "#fbe8f8";
+    --clr-text: "#0e030c";
+    --clr-primary: "#e98bde";
+    --clr-secondary: "#8b301b";
+    --clr-accent: "#dea552";
+}
+/* colors in HSL
+colors: {
+ 'text': 'hsl(309, 70%, 95%)',
+ 'background': 'hsl(311, 65%, 3%)',
+ 'primary': 'hsl(307, 68%, 73%)',
+ 'secondary': 'hsl(11, 67%, 33%)',
+ 'accent': 'hsl(36, 68%, 60%)',
+},*/
