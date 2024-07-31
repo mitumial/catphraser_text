@@ -12,24 +12,16 @@
 
 :root {
     /* Colors */
-    --clr-background: #0e030c;
-    --clr-text: #fbe8f8;
-    --clr-primary: #e98bde;
-    --clr-secondary: #8b301b;
-    --clr-accent: #dea552;
+    --clr-text: #e2f1ef;
+    --clr-background: #010e0c;
+    --clr-primary: #92e8e0;
+    --clr-secondary: #10a18b;
+    --clr-accent: #ffbc19;
 
     /* Fonts */
     --ff-title: "Chakra Petch", sans-serif;
     --ff-base: "B612 Mono", monospace;
 }
-/* colors in HSL
-colors: {
- 'text': 'hsl(309, 70%, 95%)',
- 'background': 'hsl(311, 65%, 3%)',
- 'primary': 'hsl(307, 68%, 73%)',
- 'secondary': 'hsl(11, 67%, 33%)',
- 'accent': 'hsl(36, 68%, 60%)',
-},*/
 
 /* General styling*/
 
@@ -44,8 +36,8 @@ colors: {
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    background-color: var(--clr-background);
     color: var(--clr-text);
+    background-color: var(--clr-background);
 }
 
 img,

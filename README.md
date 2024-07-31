@@ -1,3 +1,3 @@
 ## Current CSS variables:
 
-https://www.realtimecolors.com/?colors=fbe8f8-0e030c-e98bde-8b301b-dea552&fonts=Chakra%20Petch-B612%20Mono
+https://www.realtimecolors.com/?colors=e2f1ef-010E0C-92e8e0-10a18b-FFBC19&fonts=Chakra%20Petch-B612%20Mono
