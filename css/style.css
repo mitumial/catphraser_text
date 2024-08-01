@@ -88,6 +88,17 @@ h6 {
 }
 /* main styling */
 
+.main {
+    display: flex;
+    gap: 8rem;
+    margin: auto;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
 /* footer styling */
 .footer {
     margin-top: auto;
