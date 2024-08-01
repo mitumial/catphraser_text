@@ -80,6 +80,15 @@ h6 {
 
 /* Specific Styling */
 
+/* header styling */
+
+.header {
+    background-color: var(--clr-background);
+    padding: 1rem 1rem;
+}
+/* main styling */
+
+/* footer styling */
 .footer {
     margin-top: auto;
     background-color: var(--clr-background);
