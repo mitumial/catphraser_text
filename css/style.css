@@ -135,6 +135,14 @@ h6 {
     background-color: #10a18b59;
     cursor: pointer;
 }
+
+.output-group_btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+    color: var(--clr-primary);
+}
 /* footer styling */
 .footer {
     margin-top: auto;
