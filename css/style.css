@@ -103,6 +103,9 @@ h6 {
 }
 .input-group__text-area {
     background-color: #010e0cad;
+    min-height: 25rem;
+    padding: 0.2rem 0.5rem;
+    color: var(--clr-text);
     border-radius: 8px;
     border: 2px solid var(--clr-primary);
     margin-bottom: 0.3rem;
