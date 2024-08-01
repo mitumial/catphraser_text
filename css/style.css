@@ -97,8 +97,44 @@ h6 {
 .input-group {
     display: flex;
     flex-direction: column;
+    background-color: #010e0cd6;
+    padding: 2rem;
+    border: 2px dashed #ffbc19;
+}
+.input-group__text-area {
+    background-color: #010e0cad;
+    border-radius: 8px;
+    border: 2px solid var(--clr-primary);
+    margin-bottom: 0.3rem;
+}
+.input-group__text-area:active {
+    border: 2px solid var(--clr-primary);
 }
 
+.input-group__span {
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+.input-group__btn-group {
+    display: flex;
+    gap: 3rem;
+    margin-top: 1rem;
+}
+.input-group__btn {
+    padding: 0.3rem 0.8rem;
+    width: 15rem;
+    border-radius: 8px;
+    border: 2px solid #ffbc19;
+    background-color: #10a18bb7;
+    color: var(--clr-text);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.input-group__btn:hover {
+    background-color: #10a18b59;
+    cursor: pointer;
+}
 /* footer styling */
 .footer {
     margin-top: auto;
