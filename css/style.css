@@ -98,8 +98,8 @@ h6 {
     display: flex;
     flex-direction: column;
     background-color: #010e0cd6;
-    padding: 2rem;
     border: 2px dashed #ffbc19;
+    padding: 2.4rem 1.8rem;
 }
 .input-group__text-area {
     background-color: #010e0cad;
@@ -162,13 +162,22 @@ h6 {
     background-color: #ffbe19b7;
     cursor: pointer;
 }
-
+.output-group {
+    background-color: #010e0cd6;
+    border: 2px dashed #ffbc19;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.4rem 1.8rem;
+}
 .output-group_btn {
     background: none;
     border: none;
     cursor: pointer;
     padding: 1rem;
     color: var(--clr-primary);
+    align-self: flex-end;
 }
 /* footer styling */
 .footer {
