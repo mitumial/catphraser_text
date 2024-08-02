@@ -113,19 +113,19 @@ h6 {
     resize: none;
 }
 .input-group__text-area::-webkit-scrollbar {
-    width: 0.8rem;
+    width: 0.725rem;
 }
 .input-group__text-area::-webkit-scrollbar-track {
-    background-color: #92e8e0;
+    background-color: #010e0c;
     border-radius: 8px;
     cursor: default;
 }
 .input-group__text-area::-webkit-scrollbar-thumb {
-    background-color: #10a18b;
+    background-color: #383b3b;
     border-radius: 8px;
 }
 .input-group__text-area::-webkit-scrollbar-thumb:hover {
-    background-color: #25b9a3;
+    background-color: #383b3bb8;
     border-radius: 8px;
     cursor: default;
 }
