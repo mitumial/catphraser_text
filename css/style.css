@@ -103,15 +103,31 @@ h6 {
 }
 .input-group__text-area {
     background-color: #010e0cad;
-    min-height: 25rem;
+    height: 25rem;
     padding: 0.2rem 0.5rem;
     color: var(--clr-text);
+    outline: none;
     border-radius: 8px;
     border: 2px solid var(--clr-primary);
     margin-bottom: 0.3rem;
+    resize: none;
 }
-.input-group__text-area:active {
-    border: 2px solid var(--clr-primary);
+.input-group__text-area::-webkit-scrollbar {
+    width: 0.8rem;
+}
+.input-group__text-area::-webkit-scrollbar-track {
+    background-color: #92e8e0;
+    border-radius: 8px;
+    cursor: default;
+}
+.input-group__text-area::-webkit-scrollbar-thumb {
+    background-color: #10a18b;
+    border-radius: 8px;
+}
+.input-group__text-area::-webkit-scrollbar-thumb:hover {
+    background-color: #25b9a3;
+    border-radius: 8px;
+    cursor: default;
 }
 
 .input-group__span {
