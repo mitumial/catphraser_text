@@ -31,5 +31,16 @@ function cipherLetter(letter) {
 
 document.querySelector("#btn-decrypt").addEventListener("click", function () {
     document.querySelector(".output-group__img").style.display = "none";
-    outputMessage.innerHTML = inputMessage.value;
+    let message = inputMessage.value;
+    let decryptedMessage = uncipherText(message);
+    outputMessage.innerHTML = decryptedMessage;
 });
+
+function uncipherText(message) {
+    message = message.replaceAll("ai", "a");
+    message = message.replaceAll("enter", "e");
+    message = message.replaceAll("imes", "i");
+    message = message.replaceAll("ober", "o");
+    message = message.replaceAll("ufat", "u");
+    return message;
+}
