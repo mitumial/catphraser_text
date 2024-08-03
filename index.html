@@ -23,6 +23,7 @@
             href="./assets/favicon-16x16.png"
         />
         <link rel="manifest" href="./assets/site.webmanifest" />
+        <script defer src="./script.js"></script>
     </head>
     <body>
         <header class="header">
@@ -34,7 +35,7 @@
                 <textarea
                     class="input-group__text-area"
                     name=""
-                    id=""
+                    id="input-message"
                     placeholder="Ingrese el mensaje a transformar"
                 ></textarea>
                 <span class="input-group__span">
@@ -63,7 +64,7 @@
                     No se permite el uso de mayúsculas y/o caracteres especiales
                 </span>
                 <div class="input-group__btn-group">
-                    <button class="input-group__btn">
+                    <button class="input-group__btn" id="btn-encrypt">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="1.4em"
@@ -81,7 +82,7 @@
                         </svg>
                         Cifrar
                     </button>
-                    <button class="input-group__btn">
+                    <button class="input-group__btn" id="btn-decrypt">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="1.4em"
@@ -103,12 +104,13 @@
             </section>
             <section class="output-group">
                 <img
+                    class="output-group__img"
                     src="assets/box-cat.png"
                     width="500px"
                     alt="black cat in a box"
                 />
                 <!--Encriptando-->
-                <p class="output-group__text">
+                <p class="output-group__text" id="output-message">
                     El mensaje aún no ha sido recibido
                 </p>
                 <!--Replace for copy icon-->
