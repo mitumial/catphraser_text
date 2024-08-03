@@ -105,9 +105,15 @@ h6 {
     display: flex;
     flex-direction: column;
 }
+
+.input-group__title {
+    font-family: var(--ff-title);
+    align-self: center;
+    margin-bottom: 0.9rem;
+}
 .input-group__text-area {
     background-color: #010e0cad;
-    height: 25rem;
+    height: 20rem;
     padding: 0.8rem 1.1rem;
     color: var(--clr-text);
     outline: none;
@@ -142,9 +148,9 @@ h6 {
     font-weight: 400;
 }
 .input-group__btn-group {
+    margin-top: 2.5rem;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 1rem;
 }
 .input-group__btn {
     display: flex;
