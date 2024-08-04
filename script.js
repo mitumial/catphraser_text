@@ -4,29 +4,19 @@ let outputMessage = document.querySelector("#output-message");
 document.querySelector("#btn-encrypt").addEventListener("click", function () {
     document.querySelector(".output-group__img").style.display = "none";
     let textToEncrypt = inputMessage.value;
-    let encryptedText = "";
-    textToEncrypt.split("").forEach((letter) => {
-        encryptedText += cipherLetter(letter);
-    });
-
+    let encryptedText = cipherText(textToEncrypt);
     outputMessage.innerHTML = encryptedText;
 });
 
-function cipherLetter(letter) {
-    switch (letter) {
-        case "a":
-            return "ai";
-        case "e":
-            return "enter";
-        case "i":
-            return "imes";
-        case "o":
-            return "ober";
-        case "u":
-            return "ufat";
-        default:
-            return letter;
-    }
+function cipherText(message) {
+    const cipher = {
+        a: "ai",
+        e: "enter",
+        i: "imes",
+        o: "ober",
+        u: "ufat",
+    };
+    return message.replace(/[aeiou]/g, (n) => cipher[n]);
 }
 
 document.querySelector("#btn-decrypt").addEventListener("click", function () {
