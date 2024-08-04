@@ -16,7 +16,7 @@ function cipherText(message) {
         o: "ober",
         u: "ufat",
     };
-    return message.replace(/[aeiou]/g, (i) => cipher[i]);
+    return message.replace(/[aeiou]/g, (match) => cipher[match]);
 }
 
 document.querySelector("#btn-decrypt").addEventListener("click", function () {
@@ -34,5 +34,20 @@ function uncipherText(message) {
         ober: "o",
         ufat: "u",
     };
-    return message.replace(/(ai|enter|imes|ober|ufat)/g, (i) => uncipher[i]);
+    return message.replace(
+        /(ai|enter|imes|ober|ufat)/g,
+        (match) => uncipher[match]
+    );
+}
+
+document
+    .querySelector("#btn-copy")
+    .addEventListener("click", () => copyToClipboard());
+
+async function copyToClipboard() {
+    try {
+        await navigator.clipboard.writeText(outputMessage.textContent);
+    } catch (error) {
+        console.error(error.message);
+    }
 }
