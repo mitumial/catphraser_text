@@ -16,7 +16,7 @@ function cipherText(message) {
         o: "ober",
         u: "ufat",
     };
-    return message.replace(/[aeiou]/g, (n) => cipher[n]);
+    return message.replace(/[aeiou]/g, (i) => cipher[i]);
 }
 
 document.querySelector("#btn-decrypt").addEventListener("click", function () {
@@ -27,10 +27,12 @@ document.querySelector("#btn-decrypt").addEventListener("click", function () {
 });
 
 function uncipherText(message) {
-    message = message.replaceAll("ai", "a");
-    message = message.replaceAll("enter", "e");
-    message = message.replaceAll("imes", "i");
-    message = message.replaceAll("ober", "o");
-    message = message.replaceAll("ufat", "u");
-    return message;
+    const uncipher = {
+        ai: "a",
+        enter: "e",
+        imes: "i",
+        ober: "o",
+        ufat: "u",
+    };
+    return message.replace(/(ai|enter|imes|ober|ufat)/g, (i) => uncipher[i]);
 }
