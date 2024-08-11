@@ -87,7 +87,7 @@ h6 {
 
 .header {
     background-color: var(--clr-background);
-    padding: 1rem 2rem;
+    padding: 0 3rem;
 }
 /* main styling */
 
@@ -99,7 +99,7 @@ h6 {
 
 .input-group {
     width: 35rem;
-    padding: 3.4rem 2.8rem;
+    padding: 3rem 2.8rem 1.2rem;
     background-color: #010e0cd6;
     border: 2px dashed #ffbc19;
     display: flex;
@@ -174,7 +174,7 @@ h6 {
 }
 .output-group {
     width: 35rem;
-    padding: 3.4rem 2.8rem;
+    padding: 3rem 2.8rem 1.2rem;
     background-color: #010e0cd6;
     border: 2px dashed #ffbc19;
     display: flex;

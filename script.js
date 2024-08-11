@@ -50,4 +50,5 @@ async function copyToClipboard() {
     } catch (error) {
         console.error(error.message);
     }
+    inputMessage.value = "";
 }
