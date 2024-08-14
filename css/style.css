@@ -166,12 +166,15 @@ h6 {
     color: var(--clr-text);
     font-weight: 700;
     text-transform: uppercase;
+    transition: background-color 110ms linear;
+
+    &:hover {
+        background-color: #ffbe19b7;
+        cursor: pointer;
+    }
 }
 
-.input-group__btn:hover {
-    background-color: #ffbe19b7;
-    cursor: pointer;
-}
+/* left side styling*/
 .output-group {
     width: 35rem;
     padding: 3rem 2.8rem 1.2rem;
@@ -234,10 +237,11 @@ h6 {
     text-decoration: none;
     font-size: var(--fs-regular);
     font-weight: 600;
-}
-.footer__link:hover {
-    color: var(--clr-primary);
-    cursor: pointer;
+    transition: color 110ms linear;
+    &:hover {
+        color: var(--clr-primary);
+        cursor: pointer;
+    }
 }
 
 .footer__link-group .footer__link {
