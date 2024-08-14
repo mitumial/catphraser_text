@@ -2,10 +2,12 @@ let inputMessage = document.querySelector("#input-message");
 let outputMessage = document.querySelector("#output-message");
 
 document.querySelector("#btn-encrypt").addEventListener("click", function () {
-    document.querySelector(".output-group__img").style.display = "none";
     let textToEncrypt = inputMessage.value;
-    let encryptedText = cipherText(textToEncrypt);
-    outputMessage.innerHTML = encryptedText;
+    if (isValidText(textToEncrypt)) {
+        document.querySelector(".output-group__img").style.display = "none";
+        let encryptedText = cipherText(textToEncrypt);
+        outputMessage.innerHTML = encryptedText;
+    }
 });
 
 function cipherText(message) {
@@ -20,10 +22,12 @@ function cipherText(message) {
 }
 
 document.querySelector("#btn-decrypt").addEventListener("click", function () {
-    document.querySelector(".output-group__img").style.display = "none";
-    let message = inputMessage.value;
-    let decryptedMessage = uncipherText(message);
-    outputMessage.innerHTML = decryptedMessage;
+    let textToDecrypt = inputMessage.value;
+    if (isValidText(textToDecrypt)) {
+        document.querySelector(".output-group__img").style.display = "none";
+        let decryptedMessage = uncipherText(textToDecrypt);
+        outputMessage.innerHTML = decryptedMessage;
+    }
 });
 
 function uncipherText(message) {
@@ -38,6 +42,18 @@ function uncipherText(message) {
         /(ai|enter|imes|ober|ufat)/g,
         (match) => uncipher[match]
     );
+}
+
+function isValidText(message) {
+    if (message.match(/[^a-z| ]/g) || message == null) {
+        inputMessage.style.borderColor = "red";
+        document.querySelector(".input-group__span").style.color = "red";
+        return false;
+    } else {
+        inputMessage.style.borderColor = "#92e8e0";
+        document.querySelector(".input-group__span").style.color = "#e2f1ef";
+        return true;
+    }
 }
 
 document
