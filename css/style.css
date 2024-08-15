@@ -219,6 +219,10 @@ h6 {
     padding: 1rem;
     color: var(--clr-primary);
     align-self: flex-end;
+    transition: color 110ms linear;
+    &:hover {
+        color: var(--clr-secondary);
+    }
 }
 /* footer styling */
 .footer {
