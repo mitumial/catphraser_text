@@ -159,9 +159,10 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 0.5rem;
 
     padding: 0.6rem 0;
-    width: 10rem;
+    width: 40%;
     border-radius: 8px;
     border: 2px solid var(--clr-accent);
     background-color: #ffbe1967;
@@ -262,6 +263,7 @@ h6 {
     .main {
         grid-template-columns: 70vw;
         align-content: space-evenly;
+        height: auto;
     }
 }
 
@@ -272,6 +274,9 @@ h6 {
     }
     .input-group__btn-group {
         flex-direction: column;
+    }
+    .input-group__btn {
+        width: 70%;
     }
     .footer__link-group {
         flex-direction: column;
