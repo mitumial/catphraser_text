@@ -12,3 +12,4 @@ https://www.realtimecolors.com/?colors=e2f1ef-010E0C-92e8e0-10a18b-FFBC19&fonts=
 
 -   Add tab for cipher/uncipher
     -   Change buttons for encrypt/decrypt to "Run"
+-   Add animations

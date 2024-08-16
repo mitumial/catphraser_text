@@ -124,6 +124,10 @@ h6 {
     margin-bottom: 0.3rem;
     resize: none;
 }
+.input-group__text-area--flicker {
+    animation: error-border 250ms linear forwards;
+}
+
 .input-group__text-area::-webkit-scrollbar {
     width: 0.725rem;
 }
@@ -141,13 +145,15 @@ h6 {
     border-radius: 8px;
     cursor: default;
 }
-
 .input-group__span {
     display: flex;
     align-items: center;
     gap: 0.4rem;
     font-size: var(--fs-small);
     font-weight: 400;
+}
+.input-group__span--flicker {
+    animation: error-font 250ms linear forwards;
 }
 .input-group__btn-group {
     margin-top: 2.5rem;
@@ -257,7 +263,31 @@ h6 {
     font-size: var(--fs-small);
     font-weight: 400;
 }
+/* animation keyframes */
 
+@keyframes error-font {
+    0% {
+        color: red;
+    }
+    50% {
+        color: #e2f1ef;
+    }
+    100% {
+        color: red;
+    }
+}
+@keyframes error-border {
+    0% {
+        border-color: red;
+    }
+    50% {
+        border-color: #e2f1ef;
+    }
+    100% {
+        border-color: red;
+    }
+}
+/* media queries */
 @media (max-width: 1024px) {
     .main {
         grid-template-columns: 70vw;

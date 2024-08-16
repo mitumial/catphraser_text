@@ -46,12 +46,16 @@ function uncipherText(message) {
 
 function isValidText(message) {
     if (message.match(/[^a-z| ]/g) || message == null) {
-        inputMessage.style.borderColor = "red";
-        document.querySelector(".input-group__span").style.color = "red";
+        inputMessage.classList.add("input-group__text-area--flicker");
+        document
+            .querySelector(".input-group__span")
+            .classList.add("input-group__span--flicker");
         return false;
     } else {
-        inputMessage.style.borderColor = "#92e8e0";
-        document.querySelector(".input-group__span").style.color = "#e2f1ef";
+        inputMessage.classList.remove("input-group__text-area--flicker");
+        document
+            .querySelector(".input-group__span")
+            .classList.remove("input-group__span--flicker");
         return true;
     }
 }
