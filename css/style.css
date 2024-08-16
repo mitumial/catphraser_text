@@ -292,14 +292,14 @@ h6 {
     .main {
         grid-template-columns: 70vw;
         align-content: space-evenly;
+        gap: 2rem;
         height: auto;
     }
 }
 
 @media (max-width: 576px) {
     .main {
-        grid-template-columns: 95vw;
-        align-content: space-evenly;
+        grid-template-columns: 100dvw;
     }
     .input-group__btn-group {
         flex-direction: column;
