@@ -1,15 +1,19 @@
-## Current CSS variables:
+# Catphraser text
 
-https://www.realtimecolors.com/?colors=e2f1ef-010E0C-92e8e0-10a18b-FFBC19&fonts=Chakra%20Petch-B612%20Mono
+One-page website with functionality for text encryption and decryption.
 
-## Resources
+The project was developed for the Challenge ONE: Text Encryptor proposed by [Alura LATAM](https://www.aluracursos.com).
+
+## Acknowledgements
 
 -   Icon Pack from [Nimbus](https://icon-sets.iconify.design/nimbus/)
--   Illustrations [Box Cat](https://pixabay.com/illustrations/box-cat-pet-animal-black-cat-8702500/) Image by Bianca Van Dijk from Pixabay
--   Logo from [Twemoji](https://github.com/twitter/twemoji)
+-   Illustrations from [Box Cat by Bianca Van Dijk ](https://pixabay.com/illustrations/box-cat-pet-animal-black-cat-8702500/)
+-   Logo name [namelix](https://namelix.com)
+-   Background [Free SVG backgrounds and patterns](https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/)
+-   [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
+-   [Awesome README](https://github.com/matiassingers/awesome-readme)
+-   [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
 
-## TO-DO List
+## Roadmap
 
--   Add tab for cipher/uncipher
-    -   Change buttons for encrypt/decrypt to "Run"
--   Add animations
+-   Update CSS variables
